@@ -35,7 +35,6 @@ export default function OrphanageData() {
 
   function handleRemoveImage(image: string){
     let listImages = images;
-    //listImages.splice(listImages.indexOf(image),1);
     setImages(listImages.filter((img, i) => i !== listImages.indexOf(image)));
     console.log(images);
   }
